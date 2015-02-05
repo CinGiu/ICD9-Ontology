@@ -1,0 +1,40 @@
+// Classes
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input{
+	max-width: 800px;
+}
+.center-block {
+	max-width: 800px;
+}
+body{
+	background-color: #eee;
+	padding-bottom: 70px;
+}
+
+.list-child{
+	padding: 6px 15px 6px 40px;
+}
+
+.logo{
+	width: 400px;
+	padding-bottom:15px;
+}
+
+.logosmall{
+	height: 23px;
+}
+.badge{
+	float:right;
+	}
+#num_result{
+	float: right;
+	width: 11%;
+}
+#text_input{
+	width: 89%;
+}

@@ -1,0 +1,61 @@
+<html>
+	<head>
+	<title>ICD-9-CM Search Engine</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" href='static/style.css'>
+	</head>
+	<body>
+		<div class="container">
+		<div class="page-header search-input center-block">
+		<a href="/">
+			<img src="http://130.136.143.12:8890/static/icd-logo.png" class="center-block logo"/>
+		</a>
+		</div>
+		
+		<div class="row"></div>
+			<div class="row search-input center-block">
+				<div class="alert alert-info alert-dismissible center-block" role="alert" style="max-width: 600px;">
+				<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<strong>Benvenuto!</strong> Inserisci le diagnosi nel campo sottostante separate da ", " (virgola spazio) come nell'esempio. Premi Invio per cercare.
+				</div>
+				
+				<div class="center-block">
+					<form method="post" action="/search">
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" style="background-color: #5cb85c;">Inserisci testo</span>
+							<input type="text" id="text_input" name="q" class="form-control" placeholder="Esempio: Epigastralgia, dispnea, dolore toracico">      
+							<select class="form-control" id="num_result" name="num_result">
+								<option>4</option>
+								<option>3</option>
+								<option>2</option>
+								<option>1</option>
+						  </select>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="navbar navbar-inverse navbar-fixed-bottom">
+				<div class="container">
+					<div class="navbar-collapse collapse" id="footer-body">
+						<ul class="nav navbar-nav">
+							<li><a href="/log">Storico</a></li>
+							<li><a href="/static/abbreviazioni.html">Dizionario abbreviazioni</a></li>
+							<li><a href="mailto:stefano.rizzo8@unibo.it?subject=icd9cm">Contattaci</a></li>
+						</ul>
+						<p class="navbar-text navbar-right"><a href="#" class="navbar-link"><img src="static/icd-logo_small.png" class="logosmall" /></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
